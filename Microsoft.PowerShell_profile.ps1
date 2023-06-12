@@ -19,3 +19,4 @@ function prompt {
 	$time = Get-Date -Format "HH:mm:ss";
 	"`n┎── [" + $time + " `e[2m~`e[0m " + "fc] - " + "$(Get-Location)`n" + "└ $ ";
 }
+
