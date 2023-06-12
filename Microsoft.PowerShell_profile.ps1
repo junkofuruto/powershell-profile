@@ -17,6 +17,6 @@ Write-Host "`n";
 function prompt {
 	$prompt_time = Get-Date -Format "MM/dd/yyyy";
 	$time = Get-Date -Format "HH:mm:ss";
-	"`n┎── [" + $time + " `e[2m~`e[0m " + "fc] - " + "$(Get-Location)`n" + "└ $ ";
+    "`n┎──" + $(git rev-parse --abbrev-ref HEAD) + "─[ " + $time + " `e[2m~`e[0m " + "fc ] " + "$(Get-Location)`n" + "└ $ "; 
 }
 
